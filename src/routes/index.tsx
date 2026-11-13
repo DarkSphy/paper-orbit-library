@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-type Doc = { name: string; size: number; created_at: string };
+type Doc = { name: string; size: number; created_at: string | null };
 const BUCKET = "documents";
 
 function kind(name: string) {
